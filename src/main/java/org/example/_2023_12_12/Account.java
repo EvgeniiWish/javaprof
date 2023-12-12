@@ -14,6 +14,17 @@ public class Account {
     private Currency currency;
     private boolean isDebit;
     private BigDecimal balance;
+
+    @Override
+    public String toString() {
+        return "Account{" +
+                "accountNumber='" + accountNumber + '\'' +
+                ", country=" + country +
+                ", currency=" + currency +
+                ", isDebit=" + isDebit +
+                ", balance=" + balance +
+                '}';
+    }
 }
 
 class Bank {
